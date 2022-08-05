@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.white-side {
+    text-justify: center;
+    cursor: pointer;
+    height: 50vh;
+    width: 100vw;
+    background-color: ivory;
+}
+
+.black-side {
+    cursor: pointer;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(10,10,10);
+    color: ivory;
+}
+
+.win {
+    background-color: rgb(153, 255, 0);
+    color: rgb(10,10,10);
+    height: 50vh;
+    width: 100vw;
+}
+
+.lose {
+    background-color: red;
+    color: red;
+    height: 50vh;
+    width: 100vw;
+}
+
+.btn-pause {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    padding: 1.1rem 2.1rem;
+    border-radius: 5rem;
+    background-color: rgb(200,200,200);
+    border: 0.2rem solid white;
+    box-shadow:
+    0 0 1rem black,
+    inset 0.5rem 0.5rem 2rem rgb(60, 60, 60),
+    inset -0.5rem -0.5rem 2rem rgb(255, 255, 255);
+}
+
+.btn-reset {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    left: 22vw;
+    padding: 1.5rem 1.7rem;
+    border-radius: 5rem;
+    background-color: rgb(200,200,200);
+    border: 0.2rem solid white;
+    box-shadow:
+    0 0 1rem black,
+    inset 0.5rem 0.5rem 2rem rgb(60, 60, 60),
+    inset -0.5rem -0.5rem 2rem rgb(255, 255, 255);
+}
+
+.btn-config {
+    display: block;
+    position: fixed;
+    right: 15vw;
+}
+
+.select {
+    cursor: pointer;
+    font-size: 3.5rem;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    border-radius: 10rem;
+    appearance: none;
+    border: 0.2rem solid white;
+    outline: none;
+    background-color: rgb(200,200,200);
+    box-shadow:
+    0 0 1rem black,
+    inset 0.5rem 0.5rem 2rem rgb(60, 60, 60),
+    inset -0.5rem -0.5rem 2rem rgb(255, 255, 255);
+}
+
+.btn-pause:active {
+    background-color: rgb(130,130,130);
+}
+
+.btn-reset:active {
+    background-color: rgb(130,130,130);
+}
+
+.select:active {
+    background-color: rgb(130,130,130);
+}
+
+.hide {
+    display: none;
+}
+
+#white-timer {
+    transform: rotateZ(180deg);
+}
+
+p {
+    cursor: pointer;
+    line-height: 50vh;
+    font-size: 15rem;
+    text-align: center;
+}

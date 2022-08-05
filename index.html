@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <title>Chess Clock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-center flex-column">
+            <div class="white-side" id="white-side">
+                <p id="white-timer">10:00</p>
+            </div>
+                <div class="btn-pause hide" id="btn-pause">
+                    <img src="pause-solid.svg" width="30rem">
+                </div>
+                <div class="btn-reset" id="btn-reset">
+                    <img src="arrow-rotate-right-solid.svg" width="40rem">
+                </div>
+                <div class="btn-config" id="btn-config">
+                    <select name="Time" class="select" id="selector">
+                        <option value="10min" id="10min">10 MIN</option>
+                        <option value="5min" id="5min">5 MIN</option>
+                        <option value="3min" id="3min">3 MIN</option>
+                        <option value="3plus2" id="3plus2">3 | 2</option>
+                        <option value="1min" id="1min">1 MIN</option>
+                        <option value="2plus1" id="2plus1">2 | 1</option>
+                        <option value="1plus1" id="1plus1">1 | 1</option>
+                    </select>
+                </div>
+            <div class="black-side" id="black-side">
+                <p id="black-timer">10:00</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
